@@ -9,6 +9,11 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done;
 unset file;
 
+#Reattach/Start screen
+case "/$(ps -p $PPID -o comm=)" in
+      */sshd) screen -R -d;;
+  esac
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
 

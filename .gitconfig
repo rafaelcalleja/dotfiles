@@ -1,3 +1,10 @@
+[user]
+	name = Jorge González
+	email = jorge.gonzalez@d-noise.net
+
+[github]
+	user = kallaikoi
+
 [alias]
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
